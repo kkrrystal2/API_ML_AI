@@ -3,7 +3,7 @@
 
 ### 效果（原型）
 
-![Image text](./pro.png)
+![Image text](./pro.jpg)
 
 ### 功能
 * 识别菜品
