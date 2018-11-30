@@ -10,7 +10,7 @@
 * Questions  
 * Not doing
 
-### 效果（原型）  
+### 效果图  
 * [原型效果连接](https://kkrrystal2.github.io/prototype/)
 
 ![Image text](./pro.jpg)
