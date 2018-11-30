@@ -5,8 +5,8 @@ Final project product requirements
 |         |            |
 | ------------- |:-------------:|
 | Target release     | 未定 |
-| Epic      |  食物热量检测与过敏原检测   |
-| Document status | 未开始      |
+| Epic      |  菜品识别与相关店铺推荐   |
+| Document status | 已开始      |
 | Designer        | 甘瑜 |
 | Developer       | 甘瑜 |
 | QA | 甘瑜  |
@@ -38,7 +38,8 @@ Final project product requirements
 | 2        |   过敏原    | 用户想要是否对该食物过敏 | Must Have | 食物的成分 |
 
 
-## User interaction and design
+## User interaction and design  
+![Image text](./pro.jpg)
 
 
 ## Questions
