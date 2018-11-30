@@ -3,7 +3,7 @@
 
 ### 效果
 
-![Image text](./1.png)
+![Image text](./1.png)![Image text](./2.png)![Image text](./3.png)
 
 ### 功能
 * 识别菜品
