@@ -1,9 +1,9 @@
 # 微信小程序
 基于微信小程序的一个菜品识别并查询、推荐有关店铺的应用
 
-### 效果
+### 效果（原型）
 
-![Image text](./1.png)![Image text](./2.png)![Image text](./3.png)
+![Image text](./pro.png)
 
 ### 功能
 * 识别菜品
