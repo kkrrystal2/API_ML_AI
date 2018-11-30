@@ -1,0 +1,44 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/about/about",
+        "pages/help/help",
+        "pages/tip/tip",
+        "pages/more/more"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "识菜与推荐",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "backgroundColor": "#F0F0F0",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "识别",
+                "iconPath": "image/home.png",
+                "selectedIconPath": "image/home.png"
+            },
+            {
+                "pagePath": "pages/about/about",
+                "text": "关于",
+                "iconPath": "help.png",
+                "selectedIconPath": "help.png"
+            },
+            {
+                "pagePath": "pages/tip/tip",
+                "text": "店铺",
+                "iconPath": "image/about2.png",
+                "selectedIconPath": "image/about2.png"
+            },
+            {
+                "pagePath": "pages/more/more",
+                "text": "更多",
+                "iconPath": "image/more.png",
+                "selectedIconPath": "image/more.png"
+            }
+        ]
+    }
+}

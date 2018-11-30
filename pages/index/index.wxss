@@ -1,0 +1,13 @@
+@import "../../__wuBaseWxss__/0.wxss";
+
+page {
+    height: 100%;
+}
+
+.container {
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
