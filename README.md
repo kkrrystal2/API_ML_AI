@@ -1,6 +1,7 @@
 # 微信小程序
 基于微信小程序的一个菜品识别并查询、推荐有关店铺的应用  
 
+
 ### [产品PRD](https://github.com/kkrrystal2/API_ML_AI/blob/master/PRD.md)  
 * Goals  
 * Background and strategic fit  
@@ -17,7 +18,8 @@
 
 ### 功能
 * 识别菜品
-* 发现相关菜品的店铺推荐
+* 发现相关菜品的店铺推荐（高评分或新开业美食店）  
+* 针对主要特色为此道菜的店铺推荐（如菜品识别为鲈鱼，则推荐店铺是鲈鱼店）
 
 
 ### 用到的API
