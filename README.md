@@ -25,7 +25,7 @@
 2.如果一道菜中有多种食物，则可能识别不出或识别错误.
 
 ## 调用的API  
-1.百度菜品识别API  
+1.[百度菜品识别](https://cloud.baidu.com/doc/IMAGERECOGNITION/ImageClassify-API.html#.E8.AF.B7.E6.B1.82.E8.AF.B4.E6.98.8E) 
 2.[百度评论观点抽取API](http://ai.baidu.com/docs#/NLP-API/top)  
 3.[高德地图API](https://cloud.baidu.com/doc/IMAGERECOGNITION/ImageClassify-API.html#.E8.AF.B7.E6.B1.82.E8.AF.B4.E6.98.8E) 
 
@@ -87,6 +87,12 @@
 | --------   | -----:   | :----: |
 | 同上        | 只能识别是否是美食      |   只能给食物打标签   |
 | 总体上说，百度菜品识别API有其优势   |  
+
+### [百度评论观点抽取API](http://ai.baidu.com/docs#/NLP-API/top)  
+
+输入输出展示：
+
+![Image text](./腾讯.png)
 
 
 
