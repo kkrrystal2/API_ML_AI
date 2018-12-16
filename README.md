@@ -3,11 +3,13 @@
 
 
 ### [产品PRD](https://github.com/kkrrystal2/API_ML_AI/blob/master/PRD.md)  
-* Goals  
-* Background and strategic fit  
-* Assumptions  
-* Requirements  
-* User interaction and design  
+* 加值宣言：民以食为天，互联网时代的到来，让菜品识别以AI的形式落入平常百姓家.但是，现代社会生活和工作节奏很快，大多数人很少花时间自己做菜，所以通过相关店铺推荐可以满足用户的需求.还可以通过用户的历史纪录，来推荐你喜欢的菜品.  
+
+* 核心价值：通过拍照/上传图片的方式，最小实现对图片的输出（即菜名），并推荐有相关菜品的店铺. 
+
+* 用户痛点：1.吃饭的时候（离家/公司较远），想知道家/公司附近有没有相同的菜品；2.在网络上看到一张想吃的菜的图片，通过搜索得到菜名，并推荐相关店铺；3.通过搜索记录，形成用户喜欢的菜品推荐，解决“每天吃什么”的烦恼.
+
+* 人工智能概率性:    
 * Questions  
 * Not doing
 
