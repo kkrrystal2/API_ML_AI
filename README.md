@@ -25,7 +25,7 @@
 ## 调用的API  
 1.[百度菜品识别](https://cloud.baidu.com/doc/IMAGERECOGNITION/ImageClassify-API.html#.E8.AF.B7.E6.B1.82.E8.AF.B4.E6.98.8E)   
 2.[百度评论观点抽取API](http://ai.baidu.com/docs#/NLP-API/top)  
-3.[高德地图API](https://cloud.baidu.com/doc/IMAGERECOGNITION/ImageClassify-API.html#.E8.AF.B7.E6.B1.82.E8.AF.B4.E6.98.8E) 
+3.[腾讯地图API](https://lbs.qq.com/qqmap_wx_jssdk/index.html) 
 
 
 ### API对比
@@ -90,7 +90,13 @@
 
 输入输出展示：
 
-![Image text](./评论观点.jpg)
+![Image text](./评论观点.jpg)  
+
+#### [腾讯地图API](https://ai.qq.com/product/visionimgidy.shtml#scene)  
+
+代码展示：
+
+![Image text](./3.jpg) 
 
 #### API使用风险报告：
 
