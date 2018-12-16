@@ -23,7 +23,7 @@
 * 人工智能概率性:  1.使用百度菜品识别API，若有相似的菜（e.g.鲈鱼和桂花鱼，做法与外表相似）则出现的结果会是鲈鱼，但也有30%的概率会显示相近的结果.  2.如果一道菜中有多种食物，则可能识别不出或识别错误.
 
 ## 调用的API  
-1.[百度菜品识别](https://cloud.baidu.com/doc/IMAGERECOGNITION/ImageClassify-API.html#.E8.AF.B7.E6.B1.82.E8.AF.B4.E6.98.8E) 
+1.[百度菜品识别](https://cloud.baidu.com/doc/IMAGERECOGNITION/ImageClassify-API.html#.E8.AF.B7.E6.B1.82.E8.AF.B4.E6.98.8E)   
 2.[百度评论观点抽取API](http://ai.baidu.com/docs#/NLP-API/top)  
 3.[高德地图API](https://cloud.baidu.com/doc/IMAGERECOGNITION/ImageClassify-API.html#.E8.AF.B7.E6.B1.82.E8.AF.B4.E6.98.8E) 
 
@@ -92,7 +92,7 @@
 
 ![Image text](./评论观点.jpg)
 
-#### API使用风险报告
+#### API使用风险报告：
 
 
 ## 产品设计  
