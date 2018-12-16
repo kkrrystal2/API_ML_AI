@@ -99,7 +99,7 @@
 
 * 产品框架图：
 
-![Image text](./产品框架.png)  
+![Image text](./框架.png)  
 
 * [原型效果链接](https://kkrrystal2.github.io/prototype/)
 
