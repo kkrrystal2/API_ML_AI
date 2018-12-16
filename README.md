@@ -97,6 +97,10 @@
 
 ## 产品设计  
 
+* 产品框架图：
+
+![Image text](./产品框架.jpg)  
+
 * [原型效果链接](https://kkrrystal2.github.io/prototype/)
 
 ![Image text](./pro.jpg)
