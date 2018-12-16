@@ -21,7 +21,25 @@
 ### 用到的API
 * 百度菜品识别API  
 
-![Image text](./可行性1.png)
+测试图片1：椰子鸡  
+
+![Image text](./yeziji.jpg)  
+
+代码展示1：
+![Image text](./可行性1.png)  
+
+测试图片2：鳕鱼  
+
+![Image text](./鳕鱼.jpg)  
+
+代码展示2：
+![Image text](./可行性2.png)  
+
+测试图片3：桂花鱼
+![Image text](./guihuayu.jpg)  
+
+代码展示3：
+![Image text](./可行性3.png)
 
 
 ### 效果图  
