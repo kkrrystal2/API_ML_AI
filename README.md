@@ -58,45 +58,45 @@
 * [百度菜品识别](https://cloud.baidu.com/doc/IMAGERECOGNITION/ImageClassify-API.html#.E8.AF.B7.E6.B1.82.E8.AF.B4.E6.98.8E)   
 * [百度评论观点抽取API](http://ai.baidu.com/docs#/NLP-API/top)  
 * [腾讯地图API](https://lbs.qq.com/qqmap_wx_jssdk/index.html)   
-* [美团外卖查询门店菜品分类API](http://developer.waimai.meituan.com/home/docDetail/60)个人不能调用，需要企业 
+* [美团外卖查询门店菜品分类API](http://developer.waimai.meituan.com/home/docDetail/60)   个人不能调用，需要企业   
 
 
 ### API对比
 #### [百度菜品识别](https://cloud.baidu.com/doc/IMAGERECOGNITION/ImageClassify-API.html#.E8.AF.B7.E6.B1.82.E8.AF.B4.E6.98.8E) 
 
-测试图片1：鳕鱼  
+* 测试图片1：鳕鱼  
 
 ![Image text](./鳕鱼.jpg)  
 
-代码展示1：
+* 代码展示1：
 
 ![Image text](./可行性2.png)  
 
-测试图片2：桂花鱼
+* 测试图片2：桂花鱼
 
 ![Image text](./guihuayu.jpg)  
 
-代码展示2：
+* 代码展示2：
 
 ![Image text](./可行性3.png)  
 
-测试图片3：鲈鱼
+* 测试图片3：鲈鱼
 
 ![Image text](./luyu.jpg)  
 
-代码展示3：
+* 代码展示3：
 
 ![Image text](./可行性4.png)  
 
 #### [腾讯图片识别](https://ai.qq.com/product/visionimgidy.shtml#scene) 
 
-输入输出展示：
+* 输入输出展示：
 
 ![Image text](./腾讯.png)  
 
 #### [阿里云图像识别](https://data.aliyun.com/ai?spm=5176.12127922.1238513.3.30306c06Elegza#/image-tag) 
 
-输入输出展示：
+* 输入输出展示：
 
 ![Image text](./阿里云.png)
 
@@ -121,18 +121,24 @@
 
 #### [百度评论观点抽取API](http://ai.baidu.com/docs#/NLP-API/top)  
 
-输入输出展示：
+* 输入输出展示：
 
 ![Image text](./评论观点.jpg)  
 
 #### [腾讯地图API](https://ai.qq.com/product/visionimgidy.shtml#scene)  
 
-代码展示：
+* 代码展示：
 
 ![Image text](./3.jpg) 
 
-#### API使用风险报告：
+#### API使用风险报告  
 
+|      |    百度菜品识别API     |   腾讯图片识别API     |  阿里云图像识别API     |  百度评论观点抽取API     |  美团外卖查询门店菜品分类API     | 
+| ------------- |:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|
+| 市场现状        |   输出菜名后，想知道相关餐厅    | 需要点击餐厅推荐 |  需要点击餐厅推荐 |    需要点击餐厅推荐 |    需要点击餐厅推荐 |     
+| 未来发展性      |   输出菜名后，想知道更多用户口味    | 需要点击口味推荐 |  需要点击餐厅推荐 |    需要点击餐厅推荐 |    需要点击餐厅推荐 |   
+| 输入输出限制      |   输出菜名后，想知道更多用户口味    | 需要点击口味推荐 |   需要点击餐厅推荐 |    需要点击餐厅推荐 |    需要点击餐厅推荐 |   
+| 定价      |   输出菜名后，想知道更多用户口味    | 需要点击口味推荐 |   需要点击餐厅推荐 |    需要点击餐厅推荐 |    需要点击餐厅推荐 |   
 
 ## 产品设计  
 
