@@ -52,7 +52,6 @@
 ### 人工智能概率性  
 * 使用百度菜品识别API，若有相似的菜（e.g.鲈鱼和桂花鱼，做法与外表相似）则出现的结果会是鲈鱼，但也有30%的概率会显示相近的结果.  
 * 如果一道菜中有多种食物，则可能识别不出或识别错误.  
-* 
 
 ## API  
 * [百度菜品识别](https://cloud.baidu.com/doc/IMAGERECOGNITION/ImageClassify-API.html#.E8.AF.B7.E6.B1.82.E8.AF.B4.E6.98.8E)   
