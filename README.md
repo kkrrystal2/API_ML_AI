@@ -130,7 +130,7 @@
 
 ![Image text](./3.jpg)   
 
-#### [美团外卖查询查询菜品详情API](http://developer.waimai.meituan.com/home/docDetail/69)  
+#### [美团外卖查询菜品详情API](http://developer.waimai.meituan.com/home/docDetail/69)  
 
 * 代码展示：
 
