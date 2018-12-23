@@ -5,7 +5,7 @@
 |         |            |
 | ------------- |:-------------:|
 | Target release     | 未定 |
-| Epic      |  菜品识别与相关店铺推荐   |
+| Epic      |  菜品识别与相关餐厅和用户可能喜欢的菜品推荐   |
 | Document status | 已开始      |
 | Designer        | 甘瑜 |
 | Developer       | 甘瑜 |
@@ -20,7 +20,7 @@
 * 通过搜索历史，形成用户每天的菜谱，即每天吃什么.
 
 ### 加值宣言  
-* 民以食为天，互联网时代的到来，让菜品识别以AI的形式落入平常百姓家.但是，现代社会生活和工作节奏很快，大多数人很少花时间自己做菜，所以通过相关餐厅推荐（百度评论观点抽取API筛选餐厅）可以满足用户的需求.还可以通过用户的历史纪录，来推荐用户喜欢的菜品.  
+* 民以食为天，互联网时代的到来，让菜品识别以AI的形式落入平常百姓家.但是，现代社会生活和工作节奏很快，大多数人很少花时间自己做菜，所以通过相关餐厅推荐（百度评论观点抽取API筛选餐厅）可以满足用户的需求.还可以通过用户的搜索纪录，来推荐用户可能喜欢的菜品.  
 
 ### 核心价值  
 * 通过拍照/上传图片的方式，最小实现对图片的输出（即菜名），并推荐有相关菜品的餐厅，解决用户“吃饭难”问题. 
@@ -57,7 +57,7 @@
 * [百度菜品识别](https://cloud.baidu.com/doc/IMAGERECOGNITION/ImageClassify-API.html#.E8.AF.B7.E6.B1.82.E8.AF.B4.E6.98.8E)   
 * [百度评论观点抽取API](http://ai.baidu.com/docs#/NLP-API/top)  
 * [腾讯地图API](https://lbs.qq.com/qqmap_wx_jssdk/index.html)   
-* [美团外卖查询门店菜品分类API](http://developer.waimai.meituan.com/home/docDetail/60)   （个人不能调用，需要企业）   
+* [美团外卖查询查询菜品详情API](http://developer.waimai.meituan.com/home/docDetail/69)   （个人不能调用，需要企业）   
 
 
 ### API对比
