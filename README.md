@@ -128,7 +128,13 @@
 
 * 代码展示：
 
-![Image text](./3.jpg) 
+![Image text](./3.jpg)   
+
+#### [美团外卖查询查询菜品详情API](http://developer.waimai.meituan.com/home/docDetail/69)  
+
+* 代码展示：
+
+![Image text](./mt.png) 
 
 #### API使用风险报告  
 
