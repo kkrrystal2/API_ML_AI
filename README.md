@@ -69,7 +69,7 @@
 
 * 代码展示1：
 
-![Image text](./可行性2.png)  
+![Image text](./code1.png)  
 
 * 测试图片2：桂花鱼
 
@@ -77,7 +77,7 @@
 
 * 代码展示2：
 
-![Image text](./可行性3.png)  
+![Image text](./code2.png)  
 
 * 测试图片3：鲈鱼
 
@@ -85,7 +85,7 @@
 
 * 代码展示3：
 
-![Image text](./可行性4.png)  
+![Image text](./code3.png)  
 
 #### [腾讯图片识别](https://ai.qq.com/product/visionimgidy.shtml#scene) 
 
