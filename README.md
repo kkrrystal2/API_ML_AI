@@ -85,7 +85,7 @@
 
 * 代码展示3：
 
-![Image text](./code3.png)  
+![Image text](./code4.png)  
 
 #### [腾讯图片识别](https://ai.qq.com/product/visionimgidy.shtml#scene) 
 
