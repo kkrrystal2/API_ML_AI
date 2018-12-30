@@ -122,7 +122,7 @@
 
 * 输入输出展示：
 
-![Image text](./评论观点.jpg)  
+![Image text](./code6.jpg)  
 
 #### [腾讯地图API](https://ai.qq.com/product/visionimgidy.shtml#scene)  
 
