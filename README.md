@@ -171,3 +171,19 @@
 1.API漏洞：①通过用户的报错、②未识别出结果后用户的数据上传，提高API的精准度。  
 2.游戏化设计：通过用户可能喜欢的菜品测试，增加APP的趣味性，增强用户粘性。
 
+
+## 清单  
+* [产品PRD](https://github.com/kkrrystal2/API_ML_AI/blob/master/PRD.md)  
+* 调用的API  
+  * [百度菜品识别](https://cloud.baidu.com/doc/IMAGERECOGNITION/ImageClassify-API.html#.E8.AF.B7.E6.B1.82.E8.AF.B4.E6.98.8E)   
+  * [百度评论观点抽取API](http://ai.baidu.com/docs#/NLP-API/top)  
+  * [腾讯地图API](https://lbs.qq.com/qqmap_wx_jssdk/index.html)   
+  * [美团外卖查询菜品详情API](http://developer.waimai.meituan.com/home/docDetail/69)  
+* 比对API
+  * [腾讯图片识别](https://ai.qq.com/product/visionimgidy.shtml#scene)   
+  * [阿里云图像识别](https://data.aliyun.com/ai?spm=5176.12127922.1238513.3.30306c06Elegza#/image-tag)   
+* [原型效果链接](https://kkrrystal2.github.io/prototype/)  
+* 举例  
+  * [AI美食相机](http://ai.baidu.com/customer/meishi)  
+  * [识菜君](http://ai.baidu.com/customer/vsapp)  
+  * [房天下](http://ai.baidu.com/customer/meishi)
