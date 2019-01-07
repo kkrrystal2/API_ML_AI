@@ -4,8 +4,8 @@ Final project product requirements
 
 |         |            |
 | ------------- |:-------------:|
-| Target release     | 未定 |
-| Epic      |  菜品识别与相关店铺推荐   |
+| Target release     | 2019年1月8日 |
+| Epic      |  菜品识别与附近餐厅和用户可能喜欢的菜品推荐   |
 | Document status | 已开始      |
 | Designer        | 甘瑜 |
 | Developer       | 甘瑜 |
@@ -14,7 +14,9 @@ Final project product requirements
 
 ## Goals
 * 随时随地，拿起手机，满足用户想要知道菜品名字的好奇心.  
-* 并通过查询得到的结果，找寻到相关店铺.
+* 并通过查询得到的结果，找寻到附近餐厅.  
+* 通过搜索历史，形成用户每天的菜谱，即每天吃什么.
+
 
 
 ## Background and strategic fit
