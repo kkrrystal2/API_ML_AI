@@ -1,5 +1,0 @@
-@import "../../__wuBaseWxss__/0.wxss";
-
-page {
-    height: 100%;
-}
