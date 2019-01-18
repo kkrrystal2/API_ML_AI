@@ -150,7 +150,7 @@
 
 ![Image text](./框架.png)  
 
-* [原型效果链接](https://kkrrystal2.github.io/prototype/)
+* [原型效果链接]低交互，可点击下面三个选项（识别、餐厅、我的）(https://kkrrystal2.github.io/prototype/)
 
 ![Image text](./产品界面1.png)  
 
