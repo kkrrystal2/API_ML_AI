@@ -69,15 +69,63 @@
 
 * 代码展示1：
 
-![Image text](./code1.png)  
+```
 
+from aip import AipImageClassify
+""" 你的 APPID AK SK """
+APP_ID = 'XXXXX'
+API_KEY = 'XXXXXXXX'
+SECRET_KEY = 'XXXXXXXXXXXXXXXX'
+client = AipImageClassify(APP_ID, API_KEY, SECRET_KEY)
+def get_file_content(filePath):
+    with open('C:\\Users\\PC20161006-02\\Desktop\\鳕鱼.jpg', 'rb') as fp:
+        return fp.read()
+image = get_file_content('6.jpg')
+""" 如果有可选参数 """
+options = {}
+options["top_num"] = 3
+options["filter_threshold"] = "0.7"
+options["baike_num"] = 5
+""" 带参数调用菜品识别 """
+a=client.dishDetect(image, options)
+print(a)
+
+{'log_id': 4386457302901247568, 'result_num': 3, 'result': [{'calorie': '175', 'has_calorie': True, 'name': '煎鳕鱼', 'probability': '0.54478', 'baike_info': {'baike_url': 'http://baike.baidu.com/item/%E7%85%8E%E9%B3%95%E9%B1%BC/4383573', 'description': '煎鳕鱼是一道以鳕鱼肉为主要食材制作的美食。'}}, {'calorie': '170', 'has_calorie': True, 'name': '银鳕鱼', 'probability': '0.129811', 'baike_info': {'baike_url': 'http://baike.baidu.com/item/%E8%A3%B8%E7%9B%96%E9%B1%BC/6304576', 'image_url': 'http://imgsrc.baidu.com/baike/pic/item/b94f65ec2c7fc5ef2e2e217c.jpg', 'description': '裸盖鱼(学名：Anoplopoma fimbria)是黑鲉科、裸盖鱼属鱼类。主要分布于北冰洋，北太平洋。这种鱼属冷水域之深海鱼其营养价值极高，含有脂肪，蛋白质及多种维生素。裸盖鱼因酷似鳕鱼，所以最先由日本市场命名为“银鳕鱼”，价格比真正的鳕鱼贵许多。由于其营养价值高，所以经常被用来烹调美食，广泛分布于世界的海域。'}}, {'calorie': '83', 'has_calorie': True, 'name': '龙利鱼', 'probability': '0.0507464', 'baike_info': {'baike_url': 'http://baike.baidu.com/item/%E9%BE%99%E5%88%A9%E9%B1%BC/4682756', 'image_url': 'http://imgsrc.baidu.com/baike/pic/item/4e4a20a4462309f78c7fb8fb720e0cf3d6cad6c2.jpg', 'description': '龙利鱼属鲽形目、舌鳎科、舌鳎属，俗称子板鱼、鳎目、鳎米，是一种暖温性近海大型底层鱼类，终年生活栖息在中国近海海区，具广温、广盐和适应多变的环境条件的特点，适温范围3.5—32℃，最适水温14—24℃，适盐范围14-33‰。半滑舌鳎自然资源量少，味鲜鲜美，出肉率高，口感爽滑，鱼肉久煮而不老，无腥味和异味，属于高蛋白，营养丰富，历来为中国沿海广大消费者待客的上等佳品，深受广大消费者青睐，目前活鱼价格很高。加之，半滑舌鳎生长速度快，食物层次低，能耐低氧，病害少，适合在目前养殖大菱鲆、牙鲆的大棚内养殖。'}}]}  
+
+```
+
+
+ 
 * 测试图片2：桂花鱼
 
 ![Image text](./guihuayu.jpg)  
 
-* 代码展示2：
+* 代码展示2：  
 
-![Image text](./code2.png)  
+```
+from aip import AipImageClassify
+""" 你的 APPID AK SK """
+APP_ID = 'xxxxxxxxx'
+API_KEY = 'xxxxxxxxxxx'
+SECRET_KEY = 'xxxxxxxxxxxxxxxxx'
+client = AipImageClassify(APP_ID, API_KEY, SECRET_KEY)
+def get_file_content(filePath):
+    with open('C:\\Users\\PC20161006-02\\Desktop\\guihuayu.jpg', 'rb') as fp:
+        return fp.read()
+image = get_file_content('6.jpg')
+""" 如果有可选参数 """
+options = {}
+options["top_num"] = 3
+options["filter_threshold"] = "0.7"
+options["baike_num"] = 5
+""" 带参数调用菜品识别 """
+a=client.dishDetect(image, options)
+print(a)  
+
+{'log_id': 3475128781405538096, 'result_num': 3, 'result': [{'calorie': '118', 'has_calorie': True, 'name': '蒸鲈鱼', 'probability': '0.3477', 'baike_info': {'baike_url': 'http://baike.baidu.com/item/%E8%92%B8%E9%B2%88%E9%B1%BC/3121965', 'image_url': 'http://imgsrc.baidu.com/baike/pic/item/a2cc7cd98d1001e9ea59841abb0e7bec54e797ba.jpg', 'description': '蒸鲈鱼是一道色香味俱全的传统名菜，属于湘菜，鲁菜或粤菜。鲈鱼肉质白嫩、清香，没有腥味，肉为蒜瓣形，最宜清蒸、红烧或炖汤。 鲈鱼品种很多，如黄鲈、湖鲈、白鲈等。鲈鱼体侧偏，成鱼长30～60cm，嘴大，背厚，鳞小，栖于近海，冬季回游到淡水中，性凶猛，以小鱼虾等为食。鲈鱼肉呈白色，刺少，肉质细嫩、爽滑，鲜味突出。鲈鱼在全世界温带沿海地区均有出产，以加拿大,澳大利亚产量最高。'}}, {'calorie': '135', 'has_calorie': True, 'name': '清蒸鱼', 'probability': '0.327215', 'baike_info': {'baike_url': 'http://baike.baidu.com/item/%E6%B8%85%E8%92%B8%E9%B1%BC/2415961', 'image_url': 'http://imgsrc.baidu.com/baike/pic/item/024f78f0f736afc37ebbedcab919ebc4b64512ed.jpg', 'description': '清蒸鱼是用各类鱼制作的一道家常菜，主要原材料有鱼、生姜、香蒜等，口味咸鲜，鱼肉软嫩，鲜香味美，汤清味醇，具有养血和开胃的功效，是舌尖上的美食。'}}, {'calorie': '92', 'has_calorie': True, 'name': '石斑鱼', 'probability': '0.0567716', 'baike_info': {'baike_url': 'http://baike.baidu.com/item/%E7%9F%B3%E6%96%91%E9%B1%BC/425506', 'image_url': 'http://imgsrc.baidu.com/baike/pic/item/c2cec3fdfc039245c2dd67168194a4c27d1e25ba.jpg', 'description': '黑猫鱼即石斑鱼，沿海当地居民俗称。生活在海边石头缝隙，有海中鲤鱼之称，实际上食用价值和味道高于鲤鱼。比常见鱼类价格偏贵。石斑鱼，属鲈形目，体长椭圆形稍侧扁。口大，具辅上颌骨，牙细尖，有的扩大成犬牙。体被小栉鳞，有时常埋于皮下。背鳍,臀鳍棘发达，尾鳍圆形或凹形，体色变异甚多，常呈褐色或红色，并具条纹和斑点，为暖水性的大中型海产鱼类。石斑鱼营养丰富，肉质细嫩洁白，类似鸡肉，素有“海鸡肉”之称。石斑鱼又是一种低脂肪、高蛋白的上等食用鱼，被港澳地区推为中国四大名鱼之一。'}}]}
+
+```
+
 
 * 测试图片3：鲈鱼
 
@@ -85,7 +133,31 @@
 
 * 代码展示3：
 
-![Image text](./code4.png)  
+```
+
+from aip import AipImageClassify
+""" 你的 APPID AK SK """
+APP_ID = 'xxxxxxx'
+API_KEY = 'xxxxxxxxxxx'
+SECRET_KEY = 'xxxxxxxxxxxxxx'
+client = AipImageClassify(APP_ID, API_KEY, SECRET_KEY)
+def get_file_content(filePath):
+    with open('C:\\Users\\PC20161006-02\\Desktop\\guihuayu2.jpg', 'rb') as fp:
+        return fp.read()
+image = get_file_content('6.jpg')
+""" 如果有可选参数 """
+options = {}
+options["top_num"] = 3
+options["filter_threshold"] = "0.7"
+options["baike_num"] = 5
+""" 带参数调用菜品识别 """
+a=client.dishDetect(image, options)
+print(a)
+
+{'log_id': 936881095380766064, 'result_num': 3, 'result': [{'calorie': '118', 'has_calorie': True, 'name': '蒸鲈鱼', 'probability': '0.393649', 'baike_info': {'baike_url': 'http://baike.baidu.com/item/%E8%92%B8%E9%B2%88%E9%B1%BC/3121965', 'image_url': 'http://imgsrc.baidu.com/baike/pic/item/a2cc7cd98d1001e9ea59841abb0e7bec54e797ba.jpg', 'description': '蒸鲈鱼是一道色香味俱全的传统名菜，属于湘菜，鲁菜或粤菜。鲈鱼肉质白嫩、清香，没有腥味，肉为蒜瓣形，最宜清蒸、红烧或炖汤。 鲈鱼品种很多，如黄鲈、湖鲈、白鲈等。鲈鱼体侧偏，成鱼长30～60cm，嘴大，背厚，鳞小，栖于近海，冬季回游到淡水中，性凶猛，以小鱼虾等为食。鲈鱼肉呈白色，刺少，肉质细嫩、爽滑，鲜味突出。鲈鱼在全世界温带沿海地区均有出产，以加拿大,澳大利亚产量最高。'}}, {'calorie': '-1', 'has_calorie': True, 'name': '油淋鲈鱼', 'probability': '0.225333', 'baike_info': {'baike_url': 'http://baike.baidu.com/item/%E6%B2%B9%E6%B7%8B%E9%B2%88%E9%B1%BC/7563378', 'description': '油淋鲈鱼是一道以鲈鱼、香菜段、姜丝等为主要食材制作的美食。'}}, {'calorie': '135', 'has_calorie': True, 'name': '清蒸鱼', 'probability': '0.17866', 'baike_info': {'baike_url': 'http://baike.baidu.com/item/%E6%B8%85%E8%92%B8%E9%B1%BC/2415961', 'image_url': 'http://imgsrc.baidu.com/baike/pic/item/024f78f0f736afc37ebbedcab919ebc4b64512ed.jpg', 'description': '清蒸鱼是用各类鱼制作的一道家常菜，主要原材料有鱼、生姜、香蒜等，口味咸鲜，鱼肉软嫩，鲜香味美，汤清味醇，具有养血和开胃的功效，是舌尖上的美食。'}}]}  
+
+
+```
 
 #### [腾讯图片识别](https://ai.qq.com/product/visionimgidy.shtml#scene) 
 
