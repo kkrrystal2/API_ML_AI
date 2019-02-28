@@ -156,7 +156,6 @@ print(a)
 
 {'log_id': 936881095380766064, 'result_num': 3, 'result': [{'calorie': '118', 'has_calorie': True, 'name': '蒸鲈鱼', 'probability': '0.393649', 'baike_info': {'baike_url': 'http://baike.baidu.com/item/%E8%92%B8%E9%B2%88%E9%B1%BC/3121965', 'image_url': 'http://imgsrc.baidu.com/baike/pic/item/a2cc7cd98d1001e9ea59841abb0e7bec54e797ba.jpg', 'description': '蒸鲈鱼是一道色香味俱全的传统名菜，属于湘菜，鲁菜或粤菜。鲈鱼肉质白嫩、清香，没有腥味，肉为蒜瓣形，最宜清蒸、红烧或炖汤。 鲈鱼品种很多，如黄鲈、湖鲈、白鲈等。鲈鱼体侧偏，成鱼长30～60cm，嘴大，背厚，鳞小，栖于近海，冬季回游到淡水中，性凶猛，以小鱼虾等为食。鲈鱼肉呈白色，刺少，肉质细嫩、爽滑，鲜味突出。鲈鱼在全世界温带沿海地区均有出产，以加拿大,澳大利亚产量最高。'}}, {'calorie': '-1', 'has_calorie': True, 'name': '油淋鲈鱼', 'probability': '0.225333', 'baike_info': {'baike_url': 'http://baike.baidu.com/item/%E6%B2%B9%E6%B7%8B%E9%B2%88%E9%B1%BC/7563378', 'description': '油淋鲈鱼是一道以鲈鱼、香菜段、姜丝等为主要食材制作的美食。'}}, {'calorie': '135', 'has_calorie': True, 'name': '清蒸鱼', 'probability': '0.17866', 'baike_info': {'baike_url': 'http://baike.baidu.com/item/%E6%B8%85%E8%92%B8%E9%B1%BC/2415961', 'image_url': 'http://imgsrc.baidu.com/baike/pic/item/024f78f0f736afc37ebbedcab919ebc4b64512ed.jpg', 'description': '清蒸鱼是用各类鱼制作的一道家常菜，主要原材料有鱼、生姜、香蒜等，口味咸鲜，鱼肉软嫩，鲜香味美，汤清味醇，具有养血和开胃的功效，是舌尖上的美食。'}}]}  
 
-
 ```
 
 #### [腾讯图片识别](https://ai.qq.com/product/visionimgidy.shtml#scene) 
@@ -194,13 +193,115 @@ print(a)
 
 * 输入输出展示：
 
-![Image text](./code6.jpg)  
+```
+
+from aip import AipNlp
+
+""" 你的 APPID AK SK """
+APP_ID = 'xxxxx'
+API_KEY = 'xxxxxxxxxx'
+SECRET_KEY = 'xxxxxxxxxxxxxxxxxxx '
+
+client = AipNlp(APP_ID, API_KEY, SECRET_KEY)
+
+text = "这家烤鱼店很好吃"
+
+""" 调用词法分析 """
+client.lexer(text)  
+
+'items': [{'basic_words': ['这', '家'],
+   'byte_length': 4,
+   'byte_offset': 0,
+   'formal': '',
+   'item': '这家',
+   'loc_details': [],
+   'ne': '',
+   'pos': 'r',
+   'uri': ''},
+  {'basic_words': ['烤鱼'],
+   'byte_length': 4,
+   'byte_offset': 4,
+   'formal': '',
+   'item': '烤鱼',
+   'loc_details': [],
+   'ne': '',
+   'pos': 'n',
+   'uri': ''},
+  {'basic_words': ['店'],
+   'byte_length': 2,
+   'byte_offset': 8,
+   'formal': '',
+   'item': '店',
+   'loc_details': [],
+   'ne': '',
+   'pos': 'n',
+   'uri': ''},
+  {'basic_words': ['很', '好吃'],
+   'byte_length': 6,
+   'byte_offset': 10,
+   'formal': '',
+   'item': '很好吃',
+   'loc_details': [],
+   'ne': '',
+   'pos': 'a',
+   'uri': ''}],
+ 'log_id': 7541762730960004016,
+ 'text': '这家烤鱼店很好吃'}  
+ 
+ ```
 
 #### [腾讯地图API](https://ai.qq.com/product/visionimgidy.shtml#scene)  
 
 * 代码展示：
 
-![Image text](./3.jpg)   
+```
+
+data: {
+    longitude: 113.27,
+    latitude: 23.11,
+    aroundPlaces: [],
+    curr_inx: 0,
+    markers: [{
+      longitude: 113.27,
+      latitude: 23.11,
+    }],
+    confirmAddress: "",
+  },
+  confirm: function () {
+    //现获取到所有页面，然后拿到当前页面的上一个页面[注意length-2的含义]
+    let vm = this, pages = getCurrentPages(), prePage = pages[pages.length - 2];
+    //这里的prepage就是上一个页面的this，returnAddress属性一定要在上一个页面的data里事先定义。
+    prePage.setData({ returnAddress: vm.data.confirmAddress })
+    wx.navigateBack();
+  },
+  // 搜索入口  
+  wxSearchTab: function (e) {
+    let vm = this;
+    qqmapsdk.getSuggestion({
+      keyword: e.detail.value || '',
+      success: function (res) {
+        vm.setData({
+          aroundPlaces: res.data,
+          confirmAddress: res.data[0].address
+        });
+      },
+      fail: function (res) {
+        console.log(res)
+      }
+    });
+  },
+  selectAddress: function (e) {
+    let vm = this, lat = e.currentTarget.dataset.location.lat, lng = e.currentTarget.dataset.location.lng;
+    vm.setData({
+      latitude: lat,
+      longitude: lng,
+      markers: [{ longitude: lng, latitude: lat }],
+      curr_inx: e.target.dataset.num,
+      confirmAddress: e.target.dataset.address
+    });
+  },  
+  
+```
 
 #### [美团外卖查询菜品详情API](http://developer.waimai.meituan.com/home/docDetail/69)  
 
